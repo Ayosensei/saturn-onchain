@@ -10,78 +10,23 @@ export const profile = {
 };
 
 export const stats = [
-  { label: "Threads Published", value: "500+" },
-  { label: "Followers", value: "12K+" },
-  { label: "Projects Collaborated", value: "40+" },
-  { label: "Avg. Engagement Rate", value: "8.5%" },
+  { label: "Threads Published", value: "1+" },
+  { label: "Followers", value: "20+" },
+  { label: "Projects Collaborated", value: "0" },
+  { label: "Avg. Engagement Rate", value: "%" },
 ];
 
 export const portfolioItems = [
   {
     id: 1,
     type: "thread",
-    title: "The Ultimate Guide to Layer 2 Scaling",
+    title: "How crypto scams actually work (and how to avoid them)",
     description:
-      "A comprehensive thread breaking down how L2s actually work — from rollups to validity proofs. 47-part thread that became a go-to resource.",
+      "A comprehensive thread exploring how crypto scams work and how to avoid them.",
     tags: ["DeFi", "Education", "Thread"],
-    metrics: { likes: 2400, reposts: 380, replies: 156 },
-    link: "https://x.com/saturn_onchain",
+    metrics: { likes: 5, reposts: 0, replies: 6 },
+    link: "https://x.com/saturn_onchain/status/2034888747871764809?s=20",
     featured: true,
-  },
-  {
-    id: 2,
-    type: "case-study",
-    title: "TokenPulse Launch Campaign",
-    description:
-      "Led the narrative strategy for a DeFi protocol launch. Generated 50K+ impressions in the first week with a thread series on tokenomics.",
-    tags: ["Case Study", "Launch", "Strategy"],
-    metrics: { likes: 1800, reposts: 290, replies: 89 },
-    link: "https://x.com/saturn_onchain",
-    featured: true,
-  },
-  {
-    id: 3,
-    type: "thread",
-    title: "Understanding MEV: The Hidden Tax",
-    description:
-      "Demystified MEV for retail traders. Explained sandwich attacks and how to avoid being extracted — with actual examples and numbers.",
-    tags: ["MEV", "Trading", "Thread"],
-    metrics: { likes: 3200, reposts: 510, replies: 203 },
-    link: "https://x.com/saturn_onchain",
-    featured: false,
-  },
-  {
-    id: 4,
-    type: "visual",
-    title: "DeFi Ecosystem Map 2024",
-    description:
-      "A visual deep-dive into the DeFi landscape — protocols, primitives, and how everything connects.",
-    tags: ["Visual", "Ecosystem", "Map"],
-    metrics: { likes: 5600, reposts: 920, replies: 178 },
-    link: "https://x.com/saturn_onchain",
-    featured: false,
-  },
-  {
-    id: 5,
-    type: "thread",
-    title: "Yield Farming Risk Assessment Framework",
-    description:
-      "A systematic approach to evaluating DeFi yield opportunities. Helped thousands make safer DeFi decisions.",
-    tags: ["Yield", "Risk", "Framework"],
-    metrics: { likes: 1900, reposts: 340, replies: 127 },
-    link: "https://x.com/saturn_onchain",
-    featured: false,
-  },
-  {
-    id: 6,
-    type: "case-study",
-    title: "Crypto Academy Rebrand",
-    description:
-      "Transformed a struggling crypto education account into a 6-figure community through strategic content repositioning.",
-    tags: ["Case Study", "Growth", "Community"],
-    metrics: { likes: 2100, reposts: 410, replies: 198 },
-    link: "https://x.com/saturn_onchain",
-    featured: false,
   },
 ];
 
