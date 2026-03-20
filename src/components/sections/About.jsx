@@ -21,7 +21,7 @@ export default function About() {
                   <div className="text-center">
                     <div className="w-auto h-30px mx-auto rounded-full bg-gradient-to-br from-accent-primary to-accent-hover flex items-center justify-center text-6xl mb-4">
                       <img
-                        src="src/assets/wordmark.png"
+                        src="public/wordmark.png"
                         alt={profile.name}
                         className="w-auto h-32px"
                       />
