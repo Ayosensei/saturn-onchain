@@ -52,7 +52,7 @@ export default function Contact() {
             Contact
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mt-2">
-            Let's Work Together
+            Got a project? I’ll help you make it clear.
           </h2>
           <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
             Have a project in mind? I'd love to hear about it. Let's discuss how

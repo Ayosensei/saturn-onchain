@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import { MapPin, Award, ExternalLink } from 'lucide-react';
-import StatBox from '../ui/StatBox';
-import { profile, stats, aboutContent } from '../../data/content';
+import { motion } from "framer-motion";
+import { MapPin, Award, ExternalLink } from "lucide-react";
+import StatBox from "../ui/StatBox";
+import { profile, stats, aboutContent } from "../../data/content";
 
 export default function About() {
   return (
@@ -19,22 +19,22 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/20 to-accent-hover/20" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-accent-primary to-accent-hover flex items-center justify-center text-6xl mb-4">
-                      🪐
-                    </div>
-                    <div className="font-heading text-2xl font-bold text-text-primary">
-                      {profile.name}
-                    </div>
-                    <div className="text-accent-primary font-mono text-sm mt-1">
-                      {profile.handle}
+                    <div className="w-auto h-30px mx-auto rounded-full bg-gradient-to-br from-accent-primary to-accent-hover flex items-center justify-center text-6xl mb-4">
+                      <img
+                        src="src/assets/wordmark.png"
+                        alt={profile.name}
+                        className="w-auto h-32px"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="absolute -bottom-4 -right-4 bg-bg-tertiary border border-border rounded-xl px-4 py-3 flex items-center gap-2">
                 <MapPin size={16} className="text-accent-primary" />
-                <span className="text-sm text-text-secondary">{profile.location}</span>
+                <span className="text-sm text-text-secondary">
+                  {profile.location}
+                </span>
               </div>
             </div>
           </motion.div>
@@ -63,7 +63,10 @@ export default function About() {
             <div className="space-y-3 mb-8">
               {aboutContent.highlights.map((highlight, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <Award size={18} className="text-accent-primary flex-shrink-0" />
+                  <Award
+                    size={18}
+                    className="text-accent-primary flex-shrink-0"
+                  />
                   <span className="text-text-secondary">{highlight}</span>
                 </div>
               ))}
@@ -89,7 +92,12 @@ export default function About() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16"
         >
           {stats.map((stat, i) => (
-            <StatBox key={i} value={stat.value} label={stat.label} delay={i * 100} />
+            <StatBox
+              key={i}
+              value={stat.value}
+              label={stat.label}
+              delay={i * 100}
+            />
           ))}
         </motion.div>
       </div>

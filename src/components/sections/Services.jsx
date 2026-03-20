@@ -1,11 +1,18 @@
-import { motion } from 'framer-motion';
-import { PenTool, TrendingUp, Users, Zap, MessageSquare, BarChart3 } from 'lucide-react';
-import { services } from '../../data/content';
+import { motion } from "framer-motion";
+import {
+  PenTool,
+  TrendingUp,
+  Shield,
+  Zap,
+  MessageSquare,
+  BarChart3,
+} from "lucide-react";
+import { services } from "../../data/content";
 
 const iconMap = {
   PenTool,
   TrendingUp,
-  Users,
+  Shield,
 };
 
 export default function Services() {
@@ -26,14 +33,15 @@ export default function Services() {
             What I Offer
           </h2>
           <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
-            Strategic content solutions tailored for Web3 projects looking to build authority and drive engagement.
+            Strategic content solutions tailored for Web3 projects looking to
+            build authority and drive engagement.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon] || Zap;
-            
+
             return (
               <motion.div
                 key={service.id}
@@ -58,9 +66,22 @@ export default function Services() {
 
                 <div className="space-y-2 mb-6">
                   {service.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm text-text-muted">
-                      <svg className="w-4 h-4 text-accent-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <div
+                      key={i}
+                      className="flex items-center gap-2 text-sm text-text-muted"
+                    >
+                      <svg
+                        className="w-4 h-4 text-accent-primary flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                       {feature}
                     </div>
