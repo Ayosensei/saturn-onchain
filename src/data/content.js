@@ -56,16 +56,13 @@ export const services = [
 export const aboutContent = {
   headline: "I help Web3 projects communicate clearly and build trust",
   story: [
-    "Started in crypto during the 2020 DeFi summer, I watched countless promising projects fail not because their tech was lacking, but because nobody could explain why it mattered.",
-    "That gap — between brilliant code and compelling narrative — became my calling. I dove deep into what makes people actually engage with crypto content. What drives shares, builds trust, and converts readers into community members.",
-    "Three years and 500+ threads later, I've helped protocols find their voice, launched campaigns that moved markets, and built communities that stick around long after the hype fades.",
+    "I got into Web3 the same way most people do — curiosity, hype, and a lot of confusion.",
+    "The deeper I went, the more I realized something: most Web3 projects aren’t hard to understand because they’re complex… they’re hard to understand because they’re poorly explained.",
+    "That’s the gap I focus on.",
+    "I break down complex ideas into clear, structured content that people can actually follow — whether it’s a thread, a visual, or a security-focused breakdown. The goal is simple: help users understand what’s going on, and help projects communicate in a way that builds trust.",
+    "Because in Web3, clarity isn’t optional — it’s everything.",
   ],
-  highlights: [
-    "Former content lead at a top-10 DeFi protocol",
-    "Written for protocols with combined TVL exceeding $2B",
-    "Featured in Bankless, The Defiant, and Decrypt",
-    "Speaker at ETHCC and Token2049",
-  ],
+  highlights: [],
 };
 
 export const contactInfo = {
