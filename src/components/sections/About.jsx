@@ -14,19 +14,19 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative">
-              <div className="aspect-square bg-bg-secondary rounded-2xl border border-border overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/20 to-accent-hover/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-auto h-30px mx-auto rounded-full bg-gradient-to-br from-accent-primary to-accent-hover flex items-center justify-center text-6xl mb-4">
-                      <img
-                        src="public/wordmark.png"
-                        alt={profile.name}
-                        className="w-auto h-32px"
-                      />
-                    </div>
-                  </div>
+            <div className="relative group">
+              <div className="aspect-square bg-bg-secondary rounded-2xl border border-border overflow-hidden transition-all duration-300 group-hover:border-accent-primary/50 shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/10 to-accent-hover/10" />
+                <div className="absolute inset-0 flex items-center justify-center p-12">
+                  <motion.img
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    src="/wordmark.png"
+                    alt="Saturn On-Chain Logo"
+                    className="w-full h-full object-contain filter drop-shadow-2xl"
+                  />
                 </div>
               </div>
 
