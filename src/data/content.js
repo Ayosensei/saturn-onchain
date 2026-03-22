@@ -30,24 +30,34 @@ export const services = [
     icon: "PenTool",
     title: "Web3 Content Writing",
     description:
-      "Clear threads that simplify your product and drive engagement",
+      "Strategic content tailored for the decentralized ecosystem. From deep-dive threads to community storytelling, I craft narratives that resonate with builders and investors, turning technical jargon into compelling, readable insights.",
     price: "",
     features: [],
   },
   {
     id: 2,
-    icon: "TrendingUp",
-    title: "Visual Content",
+    icon: "Code",
+    title: "Web Design & Development",
     description:
-      "Clean, minimal visuals that make your ideas easier to understand",
+      "Custom, high-performance websites and landing pages built for the Web3 era. I combine sleek, modern aesthetics with intuitive UX to ensure your project's technical complexity is matched by a seamless and engaging digital presence.",
     price: "",
     features: [],
   },
   {
     id: 3,
+    icon: "TrendingUp",
+    title: "Visual Content",
+    description:
+      "Sleek, minimal graphics designed to communicate complex crypto concepts at a glance. I specialize in creating visual assets that enhance your project's brand identity while making abstract ideas accessible to any audience.",
+    price: "",
+    features: [],
+  },
+  {
+    id: 4,
     icon: "Shield",
     title: "Security-Focused Content",
-    description: "Breakdowns that help users avoid risks and build trust",
+    description:
+      "Comprehensive breakdowns and educational resources aimed at building long-term user trust. I help projects demystify security protocols and risks, providing the clarity needed to keep users safe and informed in the on-chain world.",
     price: "",
     features: [],
   },

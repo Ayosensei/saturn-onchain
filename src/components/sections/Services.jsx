@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
   PenTool,
+  Code,
   TrendingUp,
   Shield,
   Zap,
@@ -11,6 +12,7 @@ import { services } from "../../data/content";
 
 const iconMap = {
   PenTool,
+  Code,
   TrendingUp,
   Shield,
 };
