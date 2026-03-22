@@ -56,11 +56,11 @@ export const services = [
 export const aboutContent = {
   headline: "I help Web3 projects communicate clearly and build trust",
   story: [
-    "I got into Web3 the same way most people do — curiosity, hype, and a lot of confusion.",
+    "I got into Web3 the same way most people do, curiosity, hype, and a lot of confusion.",
     "The deeper I went, the more I realized something: most Web3 projects aren’t hard to understand because they’re complex… they’re hard to understand because they’re poorly explained.",
     "That’s the gap I focus on.",
-    "I break down complex ideas into clear, structured content that people can actually follow — whether it’s a thread, a visual, or a security-focused breakdown. The goal is simple: help users understand what’s going on, and help projects communicate in a way that builds trust.",
-    "Because in Web3, clarity isn’t optional — it’s everything.",
+    "I break down complex ideas into clear, structured content that people can actually follow, whether it’s a thread, a visual, or a security-focused breakdown. The goal is simple: help users understand what’s going on, and help projects communicate in a way that builds trust.",
+    "Because in Web3, clarity isn’t optional, it’s everything.",
   ],
   highlights: [],
 };
