@@ -2,12 +2,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Mail,
-  Twitter,
-  Linkedin,
   Calendar,
   Send,
   CheckCircle,
 } from "lucide-react";
+import XLogo from "../ui/XLogo";
 import Button from "../ui/Button";
 import { contactInfo, profile } from "../../data/content";
 
@@ -34,7 +33,7 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { icon: Twitter, href: contactInfo.twitter, label: "Follow on X" },
+    { icon: XLogo, href: contactInfo.twitter, label: "Follow on X" },
     { icon: Mail, href: `mailto:${contactInfo.email}`, label: "Send an email" },
   ];
 
