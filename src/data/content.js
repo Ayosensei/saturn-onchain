@@ -36,11 +36,10 @@ export const portfolioItems = [
   {
     id: 3,
     type: "visual",
-    title: "Understanding Liquid Staking Networks",
+    title: "How crypto scams actually work",
     description:
       "",
-    tags: ["Visuals", "DeFi", "Ethereum"],
-    metrics: { likes: 34, reposts: 12, replies: 5 },
+    tags: ["Visuals", "DeFi", "Crypto"],
     link: "",
     image: "/thread1.png",
     featured: false,
@@ -48,10 +47,10 @@ export const portfolioItems = [
   {
     id: 4,
     type: "visual",
-    title: "DeFi Yield Strategies",
-    description: "Visual breakdown of sustainable yield generation in DeFi.",
-    tags: ["Visuals", "DeFi", "Yield"],
-    metrics: { likes: 89, reposts: 23, replies: 8 },
+    title: "Why most people lose money in Web3",
+    description:
+      "",
+    tags: ["Visuals", "DeFi", "Web3", "Finance"],
     link: "https://x.com/saturn_onchain",
     image: "/thread2.png",
     featured: false,
