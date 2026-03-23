@@ -39,13 +39,25 @@ export default function Card({ item, index = 0, onClick }) {
         </span>
       </div>
 
+      {item.image && (
+        <div className="w-full h-48 mb-4 overflow-hidden rounded-lg">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      )}
+
       <h3 className="font-heading text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
         {item.title}
       </h3>
 
-      <p className="text-sm text-text-secondary mb-4 line-clamp-2">
-        {item.description}
-      </p>
+      {item.type !== 'visual' && (
+        <p className="text-sm text-text-secondary mb-4 line-clamp-2">
+          {item.description}
+        </p>
+      )}
 
       <div className="flex flex-wrap gap-2 mb-4">
         {item.tags.map((tag, i) => (
@@ -58,20 +70,23 @@ export default function Card({ item, index = 0, onClick }) {
         ))}
       </div>
 
-      <div className="flex items-center gap-4 text-text-muted text-sm">
-        <span className="flex items-center gap-1">
-          <Heart size={14} />
-          {item.metrics.likes.toLocaleString()}
-        </span>
-        <span className="flex items-center gap-1">
-          <Repeat2 size={14} />
-          {item.metrics.reposts.toLocaleString()}
-        </span>
-        <span className="flex items-center gap-1">
-          <MessageCircle size={14} />
-          {item.metrics.replies.toLocaleString()}
-        </span>
-      </div>
+      {item.type !== 'visual' && (
+        <div className="flex items-center gap-4 text-text-muted text-sm">
+          <span className="flex items-center gap-1">
+            <Heart size={14} />
+            {item.metrics.likes.toLocaleString()}
+          </span>
+          <span className="flex items-center gap-1">
+            <Repeat2 size={14} />
+            {item.metrics.reposts.toLocaleString()}
+          </span>
+          <span className="flex items-center gap-1">
+            <MessageCircle size={14} />
+            {item.metrics.replies.toLocaleString()}
+          </span>
+        </div>
+      )}
+
     </motion.div>
   );
 }

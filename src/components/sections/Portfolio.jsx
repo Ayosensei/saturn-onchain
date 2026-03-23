@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X } from 'lucide-react';
 import Card from '../ui/Card';
 import { portfolioItems } from '../../data/content';
 
@@ -12,6 +13,7 @@ const filterTabs = [
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const filteredItems = activeFilter === 'all'
     ? portfolioItems
@@ -65,7 +67,18 @@ export default function Portfolio() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {filteredItems.map((item, index) => (
-            <Card key={item.id} item={item} index={index} />
+            <Card 
+              key={item.id} 
+              item={item} 
+              index={index} 
+              onClick={() => {
+                if (item.type === 'visual' && item.image) {
+                  setSelectedImage(item.image);
+                } else if (item.link) {
+                  window.open(item.link, '_blank');
+                }
+              }}
+            />
           ))}
         </motion.div>
 
@@ -74,6 +87,35 @@ export default function Portfolio() {
             <p>No items found for this filter.</p>
           </div>
         )}
+
+        {/* Image Modal */}
+        <AnimatePresence>
+          {selectedImage && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedImage(null)}
+              className="fixed inset-0 z-[100] bg-bg-primary/95 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer"
+            >
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-6 right-6 p-2 text-text-secondary hover:text-text-primary bg-bg-secondary rounded-full"
+              >
+                <X size={24} />
+              </button>
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                src={selectedImage}
+                alt="Expanded view"
+                className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl cursor-default"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );

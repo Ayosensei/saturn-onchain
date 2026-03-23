@@ -18,11 +18,46 @@ export const portfolioItems = [
     description:
       "A comprehensive thread exploring how crypto scams work and how to avoid them.",
     tags: ["DeFi", "Education", "Thread"],
-    metrics: { likes: 5, reposts: 0, replies: 6 },
+    metrics: { likes: 8, reposts: 1, replies: 6 },
     link: "https://x.com/saturn_onchain/status/2034888747871764809?s=20",
+    featured: false,
+  },
+  {
+    id: 2,
+    type: "thread",
+    title: "Why most people lose money in Web3",
+    description:
+      "A breakdown of why most Web3 losses come from poor understanding rather than scams, and why clarity is the most important edge in navigating the space.",
+    tags: ["DeFi", "Education", "Web3", "Thread"],
+    metrics: { likes: 5, reposts: 4, replies: 7 },
+    link: "https://x.com/i/status/2036181097185226951",
     featured: true,
   },
+  {
+    id: 3,
+    type: "visual",
+    title: "Understanding Liquid Staking Networks",
+    description:
+      "",
+    tags: ["Visuals", "DeFi", "Ethereum"],
+    metrics: { likes: 34, reposts: 12, replies: 5 },
+    link: "",
+    image: "/thread1.png",
+    featured: false,
+  },
+  {
+    id: 4,
+    type: "visual",
+    title: "DeFi Yield Strategies",
+    description: "Visual breakdown of sustainable yield generation in DeFi.",
+    tags: ["Visuals", "DeFi", "Yield"],
+    metrics: { likes: 89, reposts: 23, replies: 8 },
+    link: "https://x.com/saturn_onchain",
+    image: "/thread2.png",
+    featured: false,
+  }
 ];
+
 
 export const services = [
   {
