@@ -2,7 +2,7 @@ export const profile = {
   handle: "@saturn_onchain",
   name: "Saturn",
   title: "Web3 Content Strategist & DeFi Analyst",
-  tagline: "Threads, visuals, and security insights that actually make sense",
+  tagline: "I don’t just explain products, I help design and build them clearly.",
   bio: "I help Web3 projects cut through the noise with content that resonates. From DeFi deep-dives to community storytelling, I craft narratives that convert readers into believers.",
   location: "Remote",
   website: "https://saturn-onchain.vercel.app",
