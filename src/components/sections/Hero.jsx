@@ -30,8 +30,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6 leading-tight"
         >
-          I turn complex Web3 ideas into{" "}
-          <span className="text-gradient">clear, engaging content</span>
+          I make complex Web3 products{" "}
+          <span className="text-gradient">easy to understand.</span>
         </motion.h1>
 
         <motion.p
