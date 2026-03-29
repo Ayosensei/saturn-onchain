@@ -4,6 +4,7 @@ import Hero from './components/sections/Hero';
 import Featured from './components/sections/Featured';
 import Portfolio from './components/sections/Portfolio';
 import Services from './components/sections/Services';
+import WhyMe from './components/sections/WhyMe';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
 
@@ -16,6 +17,7 @@ function App() {
         <Featured />
         <Portfolio />
         <Services />
+        <WhyMe />
         <About />
         <Contact />
       </main>

@@ -82,7 +82,7 @@ export const services = [
   {
     id: 1,
     icon: "PenTool",
-    title: "Web3 Content Writing",
+    title: "I help users understand your product instantly",
     description:
       "Strategic content tailored for the decentralized ecosystem. From deep-dive threads to community storytelling, I craft narratives that resonate with builders and investors, turning technical jargon into compelling, readable insights.",
     price: "",
@@ -127,6 +127,13 @@ export const aboutContent = {
     "Because in Web3, clarity isn’t optional, it’s everything.",
   ],
   highlights: [],
+};
+
+export const whyMeContent = {
+  title: "Why Me?",
+  subtitle: "Most Web3 products aren’t too complex",
+  emphasis: "they’re just poorly explained",
+  focus: "I focus on fixing that",
 };
 
 export const contactInfo = {
