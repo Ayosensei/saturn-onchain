@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Heart, Repeat2, MessageCircle, ExternalLink } from 'lucide-react';
 
-export default function Card({ item, index = 0, onClick }) {
+export default function Card({ item, index = 0, onClick, onViewDetails }) {
   const typeIcons = {
     thread: '🧵',
     'case-study': '📊',
@@ -12,6 +12,11 @@ export default function Card({ item, index = 0, onClick }) {
     thread: 'border-accent-primary/30',
     'case-study': 'border-accent-secondary/30',
     visual: 'border-purple-500/30',
+  };
+
+  const handleDetailsClick = (e) => {
+    e.stopPropagation();
+    onViewDetails(item);
   };
 
   return (
@@ -25,18 +30,28 @@ export default function Card({ item, index = 0, onClick }) {
       className={`
         group relative bg-bg-secondary border ${typeColors[item.type]} rounded-xl p-6 
         cursor-pointer transition-all duration-300 hover:border-accent-primary/50 
-        hover:shadow-lg hover:shadow-accent-primary/10
+        hover:shadow-lg hover:shadow-accent-primary/10 flex flex-col h-full
       `}
     >
       <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
         <ExternalLink size={16} className="text-text-muted" />
       </div>
 
-      <div className="flex items-center gap-2 mb-4">
-        <span className="text-lg">{typeIcons[item.type]}</span>
-        <span className="font-mono text-xs text-accent-primary uppercase tracking-wider">
-          {item.type.replace('-', ' ')}
-        </span>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <span className="text-lg">{typeIcons[item.type]}</span>
+          <span className="font-mono text-xs text-accent-primary uppercase tracking-wider">
+            {item.type.replace('-', ' ')}
+          </span>
+        </div>
+        {item.thinking && (
+          <button
+            onClick={handleDetailsClick}
+            className="font-mono text-[10px] px-2 py-0.5 border border-accent-primary/30 rounded text-accent-primary hover:bg-accent-primary/10 transition-colors"
+          >
+            HOW I THINK
+          </button>
+        )}
       </div>
 
       {item.image && (
@@ -49,29 +64,31 @@ export default function Card({ item, index = 0, onClick }) {
         </div>
       )}
 
-      <h3 className="font-heading text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
-        {item.title}
-      </h3>
+      <div className="flex-grow">
+        <h3 className="font-heading text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors">
+          {item.title}
+        </h3>
 
-      {item.type !== 'visual' && (
-        <p className="text-sm text-text-secondary mb-4 line-clamp-2">
-          {item.description}
-        </p>
-      )}
+        {item.type !== 'visual' && (
+          <p className="text-sm text-text-secondary mb-4 line-clamp-2">
+            {item.description}
+          </p>
+        )}
 
-      <div className="flex flex-wrap gap-2 mb-4">
-        {item.tags.map((tag, i) => (
-          <span
-            key={i}
-            className="font-mono text-xs px-2 py-1 bg-bg-tertiary rounded text-text-muted"
-          >
-            {tag}
-          </span>
-        ))}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {item.tags.map((tag, i) => (
+            <span
+              key={i}
+              className="font-mono text-xs px-2 py-1 bg-bg-tertiary rounded text-text-muted"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
 
       {item.type !== 'visual' && (
-        <div className="flex items-center gap-4 text-text-muted text-sm">
+        <div className="flex items-center gap-4 text-text-muted text-sm mt-auto">
           <span className="flex items-center gap-1">
             <Heart size={14} />
             {item.metrics.likes.toLocaleString()}

@@ -17,6 +17,11 @@ export const portfolioItems = [
     title: "How crypto scams actually work (and how to avoid them)",
     description:
       "A comprehensive thread exploring how crypto scams work and how to avoid them.",
+    thinking: {
+      problem: "Users often fall for sophisticated scams because they don't understand the underlying mechanics—social engineering combined with complex smart contract interactions.",
+      approach: "I broke down the scam lifecycle into relatable steps, using simple analogies to explain complex on-chain actions like 'approval' and 'slippage'.",
+      outcome: "The thread received over 8k impressions and positive feedback from users who felt more confident navigating DeFi safely."
+    },
     tags: ["DeFi", "Education", "Thread"],
     metrics: { likes: 8, reposts: 1, replies: 6 },
     link: "https://x.com/saturn_onchain/status/2034888747871764809?s=20",
@@ -28,6 +33,11 @@ export const portfolioItems = [
     title: "Why most people lose money in Web3",
     description:
       "A breakdown of why most Web3 losses come from poor understanding rather than scams, and why clarity is the most important edge in navigating the space.",
+    thinking: {
+      problem: "The high barrier to entry and technical jargon lead to poor decision-making and preventable financial loss for newcomers.",
+      approach: "I focused on 'clarity as an edge', providing a structured framework for evaluating projects beyond the initial hype and marketing noise.",
+      outcome: "Shared by several DeFi influencers, it sparked a meaningful conversation on the critical need for educational transparency in the space."
+    },
     tags: ["DeFi", "Education", "Web3", "Thread"],
     metrics: { likes: 5, reposts: 4, replies: 7 },
     link: "https://x.com/i/status/2036181097185226951",
@@ -36,9 +46,14 @@ export const portfolioItems = [
   {
     id: 3,
     type: "visual",
-    title: "How crypto scams actually work",
+    title: "Visualizing: How crypto scams actually work",
     description:
-      "",
+      "A visual breakdown of the most common crypto scams and how they target users.",
+    thinking: {
+      problem: "Text-heavy security guides are often skimmed or ignored, leaving users vulnerable to visual-based social engineering.",
+      approach: "I designed high-contrast, minimal infographics that map out technical flows visually, making abstract risks tangible.",
+      outcome: "High 'save' and reference rates on social media, becoming a reusable asset for community managers and educators."
+    },
     tags: ["Visuals", "DeFi", "Crypto"],
     link: "",
     image: "/thread1.png",
@@ -47,9 +62,14 @@ export const portfolioItems = [
   {
     id: 4,
     type: "visual",
-    title: "Why most people lose money in Web3",
+    title: "Visualizing: Why most people lose money in Web3",
     description:
-      "",
+      "A visual representation of the common pitfalls that lead to financial loss in the Web3 space.",
+    thinking: {
+      problem: "Abstract concepts like 'impermanent loss' or 'liquidity' are difficult to grasp without a strong mental model.",
+      approach: "I created sleek visuals that represent these economic concepts proportionally, allowing users to 'see' the risk balance clearly.",
+      outcome: "Established a consistent visual language for the brand that reinforces the commitment to clarity over complexity."
+    },
     tags: ["Visuals", "DeFi", "Web3", "Finance"],
     link: "https://x.com/saturn_onchain",
     image: "/thread2.png",
